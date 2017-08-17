@@ -15,8 +15,10 @@
 ```
 apt-get install vim git curl r-base r-base-dev python-pip openjdk-8-jdk nginx
 ```
+
 - Docker  CE:
 - [https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
+
 ```
 apt-get update
 sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtualapt-get install vim git curl r-base r-base-dev
@@ -25,20 +27,25 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 apt-get update
 apt-get install docker-ce
-
 ```
+
 ## Obtener imagen de Zeppelin de Docker
 - [Github de imagen de dylanmei https://github.com/dylanmei/docker-zeppelin](https://github.com/dylanmei/docker-zeppelin)
 - [Docker Hub de dylanmei https://hub.docker.com/r/dylanmei/zeppelin/](https://hub.docker.com/r/dylanmei/zeppelin/)
+
 ```
 sudo docker pull dylanmei/zeppelin
 sudo docker images
 ```
+
 ## Inicio de Imagen de Zeppelin
+
 ```
 sudo docker run --rm -d -p 8080:8080 --name zeppelin dylanmei/zeppelin
 ```
+
 ## Apagado
+
 ```
 sudo docker stop zeppelin
 sudo docker rm zeppelin
