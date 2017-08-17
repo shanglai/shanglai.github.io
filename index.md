@@ -18,7 +18,6 @@ apt-get install vim git curl r-base r-base-dev python-pip openjdk-8-jdk nginx
 - Docker  CE:
 - [https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
 ```
-# Todo con sudo (root):
 apt-get update
 sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtualapt-get install vim git curl r-base r-base-dev
 apt-get install apt-transport-https ca-certificates curl software-properties-common
